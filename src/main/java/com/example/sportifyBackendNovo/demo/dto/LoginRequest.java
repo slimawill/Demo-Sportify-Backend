@@ -16,7 +16,7 @@ public class LoginRequest {
     private String nomeUsuario;
 
     @NotBlank(message = "Senha não pode ser vazia.")
-    @Pattern(regexp = "^[\\p{L}0-9_]{8,255}$", message = "Senha inválida, use apenas letras, números ou underscore, min 8 chars e máx 255 chars.")
+    @Pattern(regexp = "^[\\p{L}0-9_]{6,255}$", message = "Senha inválida, use apenas letras, números ou underscore, min 6 chars e máx 255 chars.")
     private String senha;
 
     public LoginRequest(String nomeUsuario, String senha) {
