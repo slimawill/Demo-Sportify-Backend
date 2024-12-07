@@ -21,7 +21,7 @@ public class AtletaService {
                 atletaDTO.getNome(),
                 atletaDTO.getDataNascimento(),
                 atletaDTO.getEsporte(),
-                atletaDTO.getGenero(),
+                atletaDTO.getGenero() != null ? atletaDTO.getGenero().charAt(0) : null,
                 atletaDTO.getAgenciaCnpj(),
                 atletaDTO.getEquipeCnpj());
         return atleta;
@@ -47,6 +47,7 @@ public class AtletaService {
                 atleta.getAgenciaCnpj(),
                 atleta.getEquipeCnpj(),
                 atleta.getSenha());
+        System.out.println(atleta.getGenero());
         if (response != 1) {
             throw new RegistrationFailedException("Erro ocorrido no cadastro de novo atleta");
         }
@@ -55,7 +56,7 @@ public class AtletaService {
 
     public  Atleta findByNomeUsuario(String nomeUsuario){
         return atletaRepository.findByNomeUsuario(nomeUsuario)
-                                                            .orElseThrow(() -> new NotFoundException("O usuario não existe"));
+                .orElseThrow(() -> new NotFoundException("O usuario não existe"));
     }
 
 } 

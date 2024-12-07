@@ -32,7 +32,7 @@ public class ProfileService {
                 atletaDTO.getNome(),
                 atletaDTO.getDataNascimento(),
                 atletaDTO.getEsporte(),
-                atletaDTO.getGenero(),
+                atletaDTO.getGenero() != null ? atletaDTO.getGenero().charAt(0) : null,
                 atletaDTO.getAgenciaCnpj(),
                 atletaDTO.getEquipeCnpj());
         return atleta;

@@ -24,7 +24,7 @@ public interface AtletaRepository extends JpaRepository<Atleta, String> {
             @Param("nome") String nome,
             @Param("dataNascimento") java.util.Date dataNascimento,
             @Param("esporte") String esporte,
-            @Param("genero") char genero,
+            @Param("genero") Character genero,
             @Param("agenciaCnpj") String agenciaCnpj,
             @Param("equipeCnpj") String equipeCnpj,
             @Param("senha") String senha

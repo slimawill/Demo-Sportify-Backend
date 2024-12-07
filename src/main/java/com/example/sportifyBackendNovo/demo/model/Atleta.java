@@ -31,7 +31,7 @@ public class Atleta {
     private String esporte;
     
     @Column(name = "GENERO")
-    private char genero;
+    private Character genero;
     
     @Column(name = "AGENCIA_CNPJ")
     private String agenciaCnpj;

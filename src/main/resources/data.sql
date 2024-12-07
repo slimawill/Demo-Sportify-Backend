@@ -65,8 +65,11 @@ VALUES ('user5', SYSTIMESTAMP, 50, 5);
 INSERT INTO SPF_MIDIA (POSTAGEM_ID, CONTEUDO) VALUES (1, 'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/04/20210227185746_625-e1682650295810.jpeg?w=910');
 INSERT INTO SPF_MIDIA (POSTAGEM_ID, CONTEUDO) VALUES (2, 'https://lncimg.lance.com.br/uploads/2023/06/o8gdmllorxuapylhykxf-aspect-ratio-512-320.jpg');
 INSERT INTO SPF_MIDIA (POSTAGEM_ID, CONTEUDO) VALUES (3, 'https://29horas.com.br/wp-content/uploads/2021/03/DSC_0129-scaled.jpg');
-INSERT INTO SPF_MIDIA (POSTAGEM_ID, CONTEUDO) VALUES (4, 'https://static.todamateria.com.br/upload/78/0p/780pxryanbertucciofchicostatejumps714-cke.jpg');
+--INSERT INTO SPF_MIDIA (POSTAGEM_ID, CONTEUDO) VALUES (4, 'https://static.todamateria.com.br/upload/78/0p/780pxryanbertucciofchicostatejumps714-cke.jpg');
+INSERT INTO SPF_MIDIA (POSTAGEM_ID, CONTEUDO) VALUES (4, 'Show');
 INSERT INTO SPF_MIDIA (POSTAGEM_ID, CONTEUDO) VALUES (5, 'https://kinexfisioterapia.com.br/wp-content/uploads/2020/08/ciclismo-kinex-fisioterapia.jpg');
+INSERT INTO SPF_MIDIA (POSTAGEM_ID, CONTEUDO) VALUES (1, 'Mensagem');
+
 
 INSERT INTO SPF_SEGUIDOR (NOME_USUARIO_SEGUIDOR, NOME_USUARIO_SEGUIDO) VALUES ('user1', 'user2');
 INSERT INTO SPF_SEGUIDOR (NOME_USUARIO_SEGUIDOR, NOME_USUARIO_SEGUIDO) VALUES ('user1', 'user3');
